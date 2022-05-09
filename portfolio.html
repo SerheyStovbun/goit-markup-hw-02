@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Portfolio for Web Studio (Version 2.1)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,79 +25,79 @@
             </ul>
         </nav>
         <ul class="auth-nav list">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
     
     </header>
 
     <main>
         <!--Portfolio navigation-->
-        <div class="portfolio-filters">
-            
-                <a href="" class="portfolio-button "><button type="button">Все</button> </a>
-                <a href="" class="portfolio-button "><button type="button">Веб-сайты</button> </a>
-                <a href="" class="portfolio-button "><button type="button">Приложения</button> </a>
-                <a href="" class="portfolio-button "><button type="button">Дизайн</button> </a>
-                <a href="" class="portfolio-button "><button type="button">Маркетинг</button> </a>   
-        </div>
+        <ul class="portfolio-filters">
+            <li class="portfolio-button"><button type="button">Все</button> </li>
+            <li class="portfolio-button"><button type="button">Веб-сайты</button></li>
+            <li class="portfolio-button "><button type="button">Приложения</button></li>
+            <li class="portfolio-button "><button type="button">Дизайн</button></li>
+            <li class="portfolio-button "><button type="button">Маркетинг</button></li>
+        </ul>
+        
         <!--Примеры работ-->
         <section class="section">
             <!--Tag <h2></h2> content will be hidden by CSS in the future. At this time used HTML-->
             
-            <h2 hidden>Accomplished job sample</h2>
+            <h1 hidden>Accomplished job sample</h1>
             
             <ul class="portfolio">
                 <li>
-                    <img src="./images/imgТехнокряк.svg" alt="web page tekhnokriak" width="370px">
+                    <img src="./images/portfolio-img/imgТехнокряк.jpg" alt="web page tekhnokriak" width="370">
                     <h3 class="portfolio-title">Технокряк</h3>
                     <p>Веб-сайт</p>
                 </li>
         
                 <li>
-                    <img src="./images/imgПостер New Orlean vs Golden Star.svg" alt="New Orlean vs Golden Star poster" width="370px">
+                    <img src="./images/portfolio-img/imgПостерNewOrleanvsGoldenStar.jpg" alt="New Orlean vs Golden Star poster" width="370">
                     <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
                     <p>Дизайн</p>
                 </li>
         
                 <li>
-                    <img src="./images/imgРесторан Seafood.svg" alt="Seafood" width="370px">
+                    <img src="./images/portfolio-img/imgРесторанSeafood.jpg" alt="Seafood" width="370">
                     <h3 class="portfolio-title">Ресторан Seafood</h3>
                     <p>Приложение</p>
                 </li>
         
                 <li>
-                    <img src="./images/imgПроект Prime.svg" alt="Prime project" width="370px">
+                    <img src="./images/portfolio-img/imgПроектPrime.jpg" alt="Prime project" width="370">
                     <h3 class="portfolio-title">Проект Prime</h3>
                     <p>Маркетинг</p>
                 </li>
 
                 <li>
-                    <img src="./images/imgПроект Boxes.svg" alt="Boxes project" width="370px">
+                    <img src="./images/portfolio-img/imgПроектBoxes.jpg" alt="Boxes project" width="370">
                     <h3 class="title">Проект Boxes</h3>
                     <p>Приложение</p>
                 </li>
 
                 <li>
-                    <img src="./images/imgInspiration has no Borders.svg" alt="Inspiration has no Borders" width="370px">
+                    <img src="./images/portfolio-img/imgInspirationhasnoBorders.jpg" alt="Inspiration has no Borders" width="370">
                     <h3 class="portfolio-title">Inspiration has no Borders</h3>
                     <p>Веб-сайт</p>
                 </li>
 
                 <li>
-                    <img src="./images/imgИздание Limited Edition.svg" alt="Limited Edition" width="370px">
+                    <img src="./images/portfolio-img/imgИзданиеLimitedEdition.jpg" alt="Limited Edition" width="370">
                     <h3 class="portfolio-title">Издание Limited Edition</h3>
                     <p>Дизайн</p>
                 </li>
 
                 <li>
-                    <img src="./images/imgПроект LAB.svg" alt="LAB зкщоусе" width="370px">
+                    <img src="./images/portfolio-img/imgПроектLAB.jpg" alt="LAB зкщоусе" width="370">
                     <h3 class="portfolio-title">Проект LAB</h3>
                     <p>Маркетинг</p>
                 </li>
 
                 <li>
-                    <img src="./images/imgGrowing Business.svg" alt="Growing Business" width="370px">
+                    <img src="./images/portfolio-img/imgGrowingBusiness.jpg" alt="Growing Business" width="370">
                     <h3 class="portfolio-title">Growing Business</h3>
                     <p>Приложение</p>
                 </li>
