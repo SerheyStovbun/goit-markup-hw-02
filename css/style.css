@@ -13,22 +13,25 @@
     
     }
 
+.liststyle {
+    list-style: none;
+}
+    
+body {
+    background-color: var(--primary-white-color);
+     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.15em;
+    font-size: 18px;
+    line-height: 1.67;
+    
+}
+
 /*index.html style*/
 
-    .list{
-        list-style: none;
-    }
-    body{
-        background-color: var(--primary-white-color);
-        color: var(--primary-text-color);
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: -0.15em;
-        font-size: 18px;
-        line-height: 1.67;
-        
-    }
+    
 
-/*site.html head*/
+/*index.html head*/
 .header-logo{
     text-decoration: none;
     width: 145px;
@@ -70,9 +73,13 @@
         color: var(--secondary-text-color);
     }
     .link:hover{ 
- text-decoration: underline; 
+  
 color: var(--link-hover-text-color);
     }
+.link:focus {
+        
+    color: var(--link-hover-text-color);
+}
 
 /*Index.html Hero*/
 
@@ -106,35 +113,50 @@ width: 696px;
 }
 
 /*ПОЧАТОК!! Проблема з позиціонуванням кнопки та посилання*/ 
-.hero-button {
+.hero button:hover{
+
+}
+.hero button:focus{
+
+}
+
+.hero-button{
+
+    
+
+    
+    
+}
+.orderbutton{
 position: absolute;
-    width: 200px;
+width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
-
-    background: #2196F3;
+    font-family: var(--primary-font-family);
+font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    color: var(--primary-white-color);
+    background-color: var(--button-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-top: 30px;
-    
 
-   
     
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        /* identical to box height, or 188% */
-    
+        
+}
+.orderbutton span:{
+    position: absolute;
+        width: 136px;
+        height: 30px;
+        left: 732px;
+        top: 440px;
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-    
-        color: #FFFFFF;
-    
 }
 /* Проблема з позиціонуванням кнопки та посилання !!КІНЕЦЬ */
 
@@ -287,6 +309,25 @@ color: var(--primary-white-color);
 
 /*Portfolio navigation*/
 
+.portfolio-filters button{
+    cursor: pointer;
+}
+.portfolio-filters button:hover{
+    background: #2196F3;
+    color: var(--primary-white-color);
+        /* shadow-middle */
+    
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-filters button:focus {
+    background: #2196F3;
+    color: var(--primary-white-color);
+    /* shadow-middle */
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
 .portfolio-allbutton{
     width: 73px;
         height: 38px;
@@ -300,35 +341,27 @@ color: var(--primary-white-color);
         height: 38px;
         left: 495px;
         top: 174px;
-    
-        
-}
-.allbutton span{
-    width: 29px;
-        height: 26px;
-        left: 517px;
-        top: 180px;
-    
-        font-family: 'Roboto';
+    font-family: var(--primary-font-family);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.63;
         /* identical to box height, or 162% */
     
         text-align: center;
         letter-spacing: 0.03em;
     
         color: var(--primary-text-color);
+        
 }
+
 
 .portfolio-webbutton{
     
     width: 128px;
         height: 38px;
         left: 576px;
-        top: 174px;
-    
+        top: 174px;    
         background: #F5F4FA;
         border-radius: 4px;
 }
@@ -336,45 +369,25 @@ color: var(--primary-white-color);
 width: 128px;
     height: 38px;
     left: 576px;
-    top: 174px;
-
-    font-family: 'Roboto';
+    top: 174px;    
+font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     /* identical to box height, or 162% */
-
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--primary-text-color);
 }
-.webbutton span{
-width: 84px;
-    height: 26px;
-    left: 598px;
-    top: 180px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-}
 
 .portfolio-appbutton{
     width: 145px;
         height: 38px;
         left: 712px;
-        top: 174px;
-    
+        top: 174px;    
         background: #F5F4FA;
         border-radius: 4px;
 }
@@ -383,26 +396,19 @@ width: 145px;
     height: 38px;
     left: 712px;
     top: 174px;
-
-    
-}
-.appbutton span{
-width: 101px;
-    height: 26px;
-    left: 734px;
-    top: 180px;
-
-    font-family: 'Roboto';
+font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
-
+    
     text-align: center;
     letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
 
-    color: #212121;
+    
 }
 
 .portfolio-designbutton{
@@ -419,25 +425,16 @@ width: 103px;
     height: 38px;
     left: 865px;
     top: 174px;
-
-    
-}
-.designbutton span{
-width: 59px;
-    height: 26px;
-    left: 887px;
-    top: 180px;
-
-    font-family: 'Roboto';
+font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
-
+    
     text-align: center;
     letter-spacing: 0.03em;
-
+    
     color: var(--primary-text-color);
 }
 
@@ -455,24 +452,53 @@ width: 130px;
     height: 38px;
     left: 976px;
     top: 174px;
-
-    
-}
-.marketingbutton span{
-width: 86px;
-    height: 26px;
-    left: 998px;
-    top: 180px;
-
-    font-family: 'Roboto';
+font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     /* identical to box height, or 162% */
 
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+    
+}
+
+.portfolio h3{
+    
+        width: 322px;
+        height: 36px;
+        left: 239px;
+        top: 576px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        /* identical to box height, or 200% */
+    
+        letter-spacing: 0.06em;
+    
+        color: #212121;
+}
+.portfolio p{
+    
+        width: 322px;
+        height: 30px;
+        left: 239px;
+        top: 616px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height, or 188% */
+    
+        letter-spacing: 0.03em;
+    
+        color: #757575;
 }
