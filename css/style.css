@@ -12,10 +12,6 @@
     --primary-font-family:'roboto' , sans-serif;
     
     }
-
-.liststyle {
-    list-style: none;
-}
     
 body {
     background-color: var(--primary-white-color);
@@ -27,25 +23,40 @@ body {
     
 }
 
-/*index.html style*/
+.liststyle {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;  
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);    
+    margin: -1px;
+    
+}
+/*-----------------------index.html style-----------------------*/
 
     
 
-/*index.html head*/
+/*-----------------------index.html head--------------------------*/
 .header-logo{
     text-decoration: none;
     width: 145px;
         height: 31px;
         left: 215px;
-        top: 24px;
-    
+        top: 24px;    
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
-        /* identical to box height */
-    
+            
         letter-spacing: 0.03em;
     
         color: #2196F3;
@@ -53,12 +64,17 @@ body {
 .header-logo span{
     color: var(--primary-text-color);
 }
-    .link{
+.header-logo:hover,
+.header-logo:focus{
+    background-color: green;
+}
+
+.link{
         cursor: pointer;
         text-decoration: none;
         font-family: var(--primary-font-family);
         font-style: normal;
-        /*position: absolute;*/
+        
         width: 68px;
         height: 16px;
         left: 679px;
@@ -81,7 +97,7 @@ color: var(--link-hover-text-color);
     color: var(--link-hover-text-color);
 }
 
-/*Index.html Hero*/
+/*--------------------------Index.html Hero--------------------*/
 
     .hero{
         background: #2F303A;
@@ -103,7 +119,7 @@ width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
-    /* or 136% */
+    
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -113,21 +129,21 @@ width: 696px;
 }
 
 /*ПОЧАТОК!! Проблема з позиціонуванням кнопки та посилання*/ 
-.hero button:hover{
+.orderbutton:hover{
+    color: var(--primary-text-color);
+    background-color: green;
 
 }
-.hero button:focus{
-
+.orderbutton:focus{
+color: var(--primary-text-color);
+    background-color: green;
 }
 
-.hero-button{
-
-    
-
-    
+.hero-button{    
     
 }
 .orderbutton{
+    cursor: pointer;
 position: absolute;
 width: 200px;
     height: 50px;
@@ -161,7 +177,7 @@ font-style: normal;
 /* Проблема з позиціонуванням кнопки та посилання !!КІНЕЦЬ */
 
 
-/*Index.html Benefits*/
+/*------------------------------Index.html Benefits-----------------*/
 
 
 .title{    
@@ -181,14 +197,14 @@ font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.72;
-        /* or 171% */
+        
     
         letter-spacing: 0.03em;
     
         color: var(--secondary-text-color);
 }
 
-/*Index.html What are we doing*/
+/*----------------------Index.html What are we doing---------------*/
 
 .section-title{
     font-family: var(--primary-font-family);
@@ -202,7 +218,7 @@ font-style: normal;
         color: var(--primary-text-color);
 }
 
-/*Index.html Our team*/
+/*-----------------------------Index.html Our team-----------------*/
 .team{
         
         background: #F5F4FA;
@@ -225,7 +241,7 @@ font-family: var(--primary-font-family);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        /* identical to box height */
+       
     
         text-align: center;
         letter-spacing: 0.03em;
@@ -240,7 +256,7 @@ font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
+    
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -248,7 +264,7 @@ font-family: var(--primary-font-family);
     color: var(--secondary-text-color);
 }
 
-/*Index.html Footer*/
+/*----------------------------Index.html Footer--------------------*/
 .footer{
     
         width: 1600px;
@@ -270,7 +286,7 @@ font-family: var(--primary-font-family);
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
-        /* identical to box height */
+        
     
         letter-spacing: 0.03em;
     
@@ -304,10 +320,10 @@ color: var(--primary-white-color);
 
 }
 
-/* portfolio.html style*/
+/* -----------------------portfolio.html style---------------------*/
 /*Portfolio head -- The same as for index.html-- go to row 31*/
 
-/*Portfolio navigation*/
+/*------------------------Portfolio navigation----------------------*/
 
 .portfolio-filters button{
     cursor: pointer;
@@ -315,14 +331,14 @@ color: var(--primary-white-color);
 .portfolio-filters button:hover{
     background: #2196F3;
     color: var(--primary-white-color);
-        /* shadow-middle */
+        
     
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-filters button:focus {
     background: #2196F3;
     color: var(--primary-white-color);
-    /* shadow-middle */
+    
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -346,7 +362,7 @@ color: var(--primary-white-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
-        /* identical to box height, or 162% */
+        
     
         text-align: center;
         letter-spacing: 0.03em;
@@ -375,7 +391,7 @@ font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    /* identical to box height, or 162% */
+    
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -401,8 +417,7 @@ font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    /* identical to box height, or 162% */
-    
+        
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -430,7 +445,6 @@ font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    /* identical to box height, or 162% */
     
     text-align: center;
     letter-spacing: 0.03em;
@@ -457,7 +471,7 @@ font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    /* identical to box height, or 162% */
+    
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -478,7 +492,7 @@ font-family: var(--primary-font-family);
         font-weight: 700;
         font-size: 18px;
         line-height: 36px;
-        /* identical to box height, or 200% */
+        
     
         letter-spacing: 0.06em;
     
@@ -496,7 +510,7 @@ font-family: var(--primary-font-family);
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
-        /* identical to box height, or 188% */
+        
     
         letter-spacing: 0.03em;
     
