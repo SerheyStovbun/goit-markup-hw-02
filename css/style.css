@@ -10,21 +10,26 @@
     --header-logo-second-color:#212121;
     --footer-logo-second-color:#fff;
     --primary-font-family:'roboto' , sans-serif;
-    
+    --logo-font-family: 'Raleway';
+    --primary-link-color:#212121;
+    --secondary-link-color:#757575;
+    --active-btn-background:#2196F3;
+    --footer-background:#2F303A;
     }
     
 body {
     background-color: var(--primary-white-color);
      color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: -0.15em;
-    font-size: 18px;
-    line-height: 1.67;
-    
+    font-family: var(--primary-font-family);   
 }
 
 .liststyle {
     list-style: none;
+}
+
+.primary-btn{
+font-family: var(--primary-font-family);
+cursor: pointer;
 }
 
 .visually-hidden {
@@ -37,8 +42,7 @@ body {
     padding: 0;  
     clip: rect(0 0 0 0);
     clip-path: inset(50%);    
-    margin: -1px;
-    
+    margin: -1px;    
 }
 /*-----------------------index.html style-----------------------*/
 
@@ -46,56 +50,44 @@ body {
 
 /*-----------------------index.html head--------------------------*/
 .header-logo{
-    text-decoration: none;
-    width: 145px;
-        height: 31px;
-        left: 215px;
-        top: 24px;    
-        font-family: 'Raleway';
-        font-style: normal;
+    text-decoration: none;       
+        font-family: var(--logo-font-family);        
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;            
         letter-spacing: 0.03em;    
         color: var(--first-logo-color);
 }
-.header-logo span{
+.header-logo-color{
     color: var(--primary-text-color);
 }
 .header-logo:hover,
 .header-logo:focus{
-    background-color: green;
+    background-color: ;
 }
 
 .link{
-        cursor: pointer;
-        text-decoration: none;
-        font-family: var(--primary-font-family);
-        font-style: normal;        
-        width: 68px;
-        height: 16px;
-        left: 679px;
-        top: 32px;          
+    cursor: pointer;
+        text-decoration: none;    
         font-weight: 500;
         font-size: 14px;
         line-height: 1.15;
-        letter-spacing: 0.02em;          
-        color: var(--primary-text-color);
+        letter-spacing: 0.02em;        
     }
-.secondlink{
-        color: var(--secondary-text-color);
+.site-nav .link{
+    color: var(--primary-link-color);
 }
-.link:hover{  
-color: var(--link-hover-text-color);
+.auth-nav .link {    
+    color: var(--secondary-link-color);
 }
-.link:focus {        
+.link:hover,
+.link:focus{  
     color: var(--link-hover-text-color);
 }
 
 /*--------------------------Index.html Hero--------------------*/
 
-.hero{
-    background: #2F303A;
+.hero{    
     width: 1600px;
     height: 600px;
     left: 0px;
@@ -103,13 +95,7 @@ color: var(--link-hover-text-color);
     }
 
 .hero-title {    
-position: absolute;
-width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-font-family: var(--primary-font-family);
-    font-style: normal;
+position: absolute;    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -119,56 +105,25 @@ text-align: center;
     color: #FFFFFF;
 }
 
-/*ПОЧАТОК!! Проблема з позиціонуванням кнопки та посилання*/ 
-.orderbutton:hover{
-    color: var(--primary-text-color);
-    background-color: green;
-}
+.orderbutton:hover,
 .orderbutton:focus{
-color: var(--primary-text-color);
-    background-color: green;
+    background: var(--active-btn-background);
+        color: var(--primary-white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.orderbutton{
-    cursor: pointer;
+.orderbutton{    
 position: absolute;
-width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-    font-family: var(--primary-font-family);
-font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
-    color: var(--primary-white-color);
-    background-color: var(--button-background-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    
-        
+    color: var(--primary-text-color);
+    border-radius: 4px;        
 }
-.orderbutton span:{
-    position: absolute;
-        width: 136px;
-        height: 30px;
-        left: 732px;
-        top: 440px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-}
-/* Проблема з позиціонуванням кнопки та посилання !!КІНЕЦЬ */
-
 
 /*------------------------------Index.html Benefits-----------------*/
 
-
-.title{    
-        font-family: var(--primary-font-family);
-        font-style: normal;
+.title{         
         font-weight: 700;
         font-size: 14px;
         line-height: 1.15;
@@ -177,9 +132,7 @@ font-style: normal;
         color: var(--primary-text-color);
 }
 
-.benefits-description{
-    font-family: var(--primary-font-family);
-        font-style: normal;
+.benefits-description{        
         font-weight: 400;
         font-size: 14px;
         line-height: 1.72;   
@@ -189,9 +142,9 @@ font-style: normal;
 
 /*----------------------Index.html What are we doing---------------*/
 
-.section-title{
-    font-family: var(--primary-font-family);
-        font-style: normal;
+.section-title,
+.team-titl{
+    font-family: var(--primary-font-family);        
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -201,24 +154,11 @@ font-style: normal;
 }
 
 /*-----------------------------Index.html Our team-----------------*/
-.team{
-        
+.team{        
         background: #F5F4FA;
-}
-.team-title-h2{
-font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
+    }
 
-.team-title-h3{
-    font-family: var(--primary-font-family);
-        font-style: normal;
+.team-head{        
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;    
@@ -227,9 +167,7 @@ font-family: var(--primary-font-family);
         color: var(--primary-text-color);
 }
 
-.team-description{
-font-family: var(--primary-font-family);
-    font-style: normal;
+.team-description{    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -240,42 +178,25 @@ font-family: var(--primary-font-family);
 
 /*----------------------------Index.html Footer--------------------*/
 .footer{
-    
-        width: 1600px;
-        height: 252px;
-        left: 0px;
-        top: 2097px;    
-        background: #2F303A;
+    background: var(--footer-background);       
 }
 .footer-logo{
-    text-decoration: none;
-        width: 145px;
-        height: 31px;
-        left: 215px;
-        top: 2157px;    
-        font-family: var(--primary-font-family);
-        font-style: normal;
+    text-decoration: none;          
+        font-family: var(--logo-font-family);        
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;   
         letter-spacing: 0.03em;    
         color: var(--first-logo-color);
-
 }
 
-.footer-logo span{
+.footer-logo-color{
     color: var(--primary-white-color);
 }
 
 .footerlink {
-    text-decoration: none;
-    width: 231px;
-        height: 21px;
-        left: 215px;
-        top: 2268px;    
-      
-     font-family: var(--primary-font-family);
-        font-style: normal;
+    text-decoration: none;      
+    font-style: normal;        
         font-weight: 400;
         font-size: 14px;
         line-height: 1.72;
@@ -294,165 +215,45 @@ color: var(--primary-white-color);
 
 /*------------------------Portfolio navigation----------------------*/
 
-.portfolio-filters button{
-    cursor: pointer;
-}
-.portfolio-filters button:hover{
-    background: #2196F3;
+.portfolio-filters .primary-btn:hover,
+.portfolio-filters .primary-btn:focus{
+    background: var(--active-btn-background);
     color: var(--primary-white-color);    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-filters button:focus {
-    background: #2196F3;
-    color: var(--primary-white-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
-
-.portfolio-allbutton{
-    width: 73px;
-        height: 38px;
-        left: 495px;
-        top: 174px;
+.portfolio-allbutton,
+.portfolio-webbutton,
+.portfolio-appbutton,
+.portfolio-designbutton,
+.portfolio-marketingbutton{   
         background: #F5F4FA;
         border-radius: 4px;
 }
-.allbutton{
-    width: 73px;
-        height: 38px;
-        left: 495px;
-        top: 174px;
-    font-family: var(--primary-font-family);
-        font-style: normal;
+.allbutton,
+.webbutton,
+.appbutton,
+.designbutton,
+.marketingbutton{        
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;    
         text-align: center;
         letter-spacing: 0.03em;    
-        color: var(--primary-text-color);
-        
+        color: var(--primary-text-color);        
 }
 
-
-.portfolio-webbutton{    
-width: 128px;
-height: 38px;
-left: 576px;
-top: 174px;    
-background: #F5F4FA;
-border-radius: 4px;
-}
-.webbutton{
-width: 128px;
-    height: 38px;
-    left: 576px;
-    top: 174px;    
-font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;    
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-
-
-.portfolio-appbutton{
-width: 145px;
-height: 38px;
-left: 712px;
-top: 174px;    
-background: #F5F4FA;
-border-radius: 4px;
-}
-.appbutton{
-width: 145px;
-    height: 38px;
-    left: 712px;
-    top: 174px;
-font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;        
-    text-align: center;
-    letter-spacing: 0.03em;    
-    color: var(--primary-text-color);
-
-    
-}
-
-.portfolio-designbutton{
-    width: 103px;
-        height: 38px;
-        left: 865px;
-        top: 174px;    
-        background: #F5F4FA;
-        border-radius: 4px;
-}
-.designbutton{
-width: 103px;
-    height: 38px;
-    left: 865px;
-    top: 174px;
-font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;    
-    text-align: center;
-    letter-spacing: 0.03em;    
-    color: var(--primary-text-color);
-}
-
-.portfolio-marketingbutton{
-    width: 130px;
-        height: 38px;
-        left: 976px;
-        top: 174px;    
-        background: #F5F4FA;
-        border-radius: 4px;
-}
-.marketingbutton{
-width: 130px;
-    height: 38px;
-    left: 976px;
-    top: 174px;
-font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    
-}
-
-.portfolio h3{     
-width: 322px;
-height: 36px;
-left: 239px;
-top: 576px;    
-font-family: var(--primary-font-family);
-font-style: normal;
+.portfolio-title{ 
 font-weight: 700;
 font-size: 18px;
 line-height: 2;    
 letter-spacing: 0.06em;    
-color: #212121;
+color: var(--primary-text-color);
 }
-.portfolio p{    
-        width: 322px;
-        height: 30px;
-        left: 239px;
-        top: 616px;    
-        font-family: var(--primary-font-family);
-        font-style: normal;
+.portfolio-description{        
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;   
         letter-spacing: 0.03em;    
-        color: #757575;
+        color: var(--secondary-text-color);
 }
