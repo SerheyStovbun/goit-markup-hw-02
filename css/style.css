@@ -87,15 +87,13 @@ cursor: pointer;
 
 /*--------------------------Index.html Hero--------------------*/
 
-.hero{    
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
+.hero{
+    background-color: var(--footer-background);    
+    
     }
 
 .hero-title {    
-position: absolute;    
+   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -107,17 +105,17 @@ text-align: center;
 
 .orderbutton:hover,
 .orderbutton:focus{
-    background: var(--active-btn-background);
+    
         color: var(--primary-white-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.orderbutton{    
-position: absolute;
+.orderbutton{ 
+    background: var(--active-btn-background);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
-    color: var(--primary-text-color);
+    color: var(--primary-white-color);
     border-radius: 4px;        
 }
 
@@ -133,7 +131,7 @@ position: absolute;
 }
 
 .benefits-description{        
-        font-weight: 400;
+        
         font-size: 14px;
         line-height: 1.72;   
         letter-spacing: 0.03em;    
@@ -168,7 +166,7 @@ position: absolute;
 }
 
 .team-description{    
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -197,7 +195,7 @@ position: absolute;
 .footerlink {
     text-decoration: none;      
     font-style: normal;        
-        font-weight: 400;
+        
         font-size: 14px;
         line-height: 1.72;
         letter-spacing: 0.03em;
@@ -227,7 +225,7 @@ color: var(--primary-white-color);
 .portfolio-appbutton,
 .portfolio-designbutton,
 .portfolio-marketingbutton{   
-        background: #F5F4FA;
+        
         border-radius: 4px;
 }
 .allbutton,
@@ -251,7 +249,7 @@ letter-spacing: 0.06em;
 color: var(--primary-text-color);
 }
 .portfolio-description{        
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 1.88;   
         letter-spacing: 0.03em;    
